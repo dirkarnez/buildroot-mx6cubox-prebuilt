@@ -1,4 +1,4 @@
-name: buildroot-qemu-virt-prebuilt-release-actions-workflow
+name: buildroot-prebuilt-release-actions-workflow
 on:
   push:
     # Sequence of patterns matched against refs/tags
@@ -12,7 +12,7 @@ jobs:
   build:
     strategy:
       matrix:
-        arch: [x86_64]
+        defconfig: [ mx6cubox_defconfig ]
         
     runs-on: ubuntu-latest
     env:
@@ -110,7 +110,7 @@ jobs:
       
       - run: |
           cd ${{ env.libraryName }} && \
-          make qemu_${{ matrix.arch }}_defconfig  && \
+          make ${{ matrix.defconfig }}  && \
           make -j8
             
   # qemu_aarch64_virt_defconfig
@@ -124,11 +124,11 @@ jobs:
         with:
           type: 'zip'
           directory: "${{ env.libraryName }}/output/images"
-          filename: "${{ env.libraryName }}-${{ matrix.arch }}-${{ github.ref_name }}.zip"
+          filename: "${{ env.libraryName }}-${{ matrix.defconfig }}-${{ github.ref_name }}.zip"
         
       - name: Release prebuilt
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "${{ env.libraryName }}/output/images/${{ env.libraryName }}-${{ matrix.arch }}-${{ github.ref_name }}.zip"
+          artifacts: "${{ env.libraryName }}/output/images/${{ env.libraryName }}-${{ matrix.defconfig }}-${{ github.ref_name }}.zip"
           allowUpdates: true
           token: ${{ secrets.GITHUB_TOKEN }}
