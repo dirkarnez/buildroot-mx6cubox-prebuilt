@@ -5,6 +5,7 @@ buildroot-prebuilt
 ### Overlay
 - [hugh712/mp3_player](https://github.com/hugh712/mp3_player)
 - [**如何添加APP到Buildroot里(以瑞芯微rv1126为例)_专栏_易百纳技术社区**](https://www.ebaina.com/articles/140000016828)
+- [k3s-io/k3s-root: K3s agent user space binaries](https://github.com/k3s-io/k3s-root)
 
 ### Tutorials
 - [Buildroot and compiler on target | LupLab @ UC Davis](https://luplab.cs.ucdavis.edu/2022/01/06/buildroot-and-compiler-on-target.html)
