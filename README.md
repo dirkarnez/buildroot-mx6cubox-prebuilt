@@ -1,5 +1,7 @@
 buildroot-prebuilt
 ============================
+`sudo dd if=sdcard.img of=/dev/sd{?} bs=4M conv=sync status=progress`
+
 ### Overlay
 - [hugh712/mp3_player](https://github.com/hugh712/mp3_player)
 - [**如何添加APP到Buildroot里(以瑞芯微rv1126为例)_专栏_易百纳技术社区**](https://www.ebaina.com/articles/140000016828)
