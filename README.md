@@ -11,6 +11,7 @@ buildroot-prebuilt
 - [Buildroot and compiler on target | LupLab @ UC Davis](https://luplab.cs.ucdavis.edu/2022/01/06/buildroot-and-compiler-on-target.html)
 - [Introduction · Buildroot架構解析](https://hugh712.gitbooks.io/buildroot/content/)
 - [使用 buildroot 建立 Mips Cross-Compiler 的環境 | by MH Chen | Medium](https://pipi9baby.medium.com/%E4%BD%BF%E7%94%A8-buildroot-%E5%BB%BA%E7%AB%8B-mips-cross-compiler-%E7%9A%84%E7%92%B0%E5%A2%83-e63a665b87f2)
+- [builtroot make menuconfig流程 - suonikeyinsu - 博客园](https://www.cnblogs.com/black-mamba/p/8888539.html)
 
 ### x86_64
 - [buildroot编译运行QEMU X86_64](https://jgsun.github.io/2020/05/28/qemu-x86-64/)
